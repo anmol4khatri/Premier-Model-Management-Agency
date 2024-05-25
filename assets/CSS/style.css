@@ -8,6 +8,10 @@ html, body{
     height: 100%;
     font-family: "Roboto", sans-serif;
 }
+@font-face {
+    font-family: monument;
+    src: url(assets\fonts\MonumentExtended-Regular.otf);
+}
 #main{
     width: 100%;
     height: 100%;
@@ -42,7 +46,71 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: monument;
+    letter-spacing: -0.1vw;
 }
 #nav h2:nth-last-child(1){
     width: 10%;
+}
+#center{
+    background-color: blueviolet;
+    width: 100%;
+    height: 86.25%;
+    padding: 3.3vw;
+    position:relative
+}
+#content{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+#overlay{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 60%;
+    padding: 0vw 3vw;
+}
+#upper_overlay{
+    background-color: cadetblue;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#upper_overlay h4{
+    font-family: monument;
+    font-size: 3.8vw;
+    color: white;
+    font-weight: 500;
+}
+#upper_overlay h2{
+    color: white;
+    padding: 2vw;
+    border: 0.1vw solid white;
+    border-radius: 50%;
+
+}
+#lower_overlay{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.2vw solid white;
+    padding-top: 0.8vw;
+}
+#lower_overlay h6{
+    font-size: 1.38vw;
+    color: white;
+    font-weight: 300;
+}
+#lower_overlay i{
+    color: white;
+    font-size: 2vw;
+    font-weight: 300;
 }

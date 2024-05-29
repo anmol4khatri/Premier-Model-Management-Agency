@@ -254,6 +254,38 @@ html, body{
     width: 100%;
     height: 100%;
     padding: 2vw 3.3vw;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#updates h1{
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'monument';
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 4.5vw;
+}
+#page4 .elem{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-top: 3px solid black;
+    padding: 2.5vw 2vw;
+    padding-right: 20vw;
+    padding-bottom: 1.8vw;
+}
+#page4 .elem h3{
+    text-transform: uppercase;
+    font-size: 1.3vw;
+}
+.inner_elem2{
+    width: 33%;
+}
+
+#page4 .elem:last-child{
+    border-bottom: 3px solid black;
 }
 #page5{
     border-top: 5px solid black;
@@ -377,4 +409,77 @@ html, body{
 }
 #p7_right_text_right{
     width: 45%;
+}
+#page8{
+    border-top: 5px solid black;
+    background-color: #ddc809;
+    width: 100%;
+    height: 100%;
+    padding: 2vw 3.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#page8 #non_marque{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+#page8 #non_marque #first{
+    width: 20%;
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'monument';
+}
+#page8 #non_marque #second{
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    gap: 1.5vw;
+}
+#page8 #non_marque #third{
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    gap: 1.5vw;
+}
+.top_text{
+    width: 100%;
+    height: 25%;
+}
+.bottom_image{
+    width: 100%;
+    height: 75%;
+}
+.bottom_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page9{
+    background:#ddc809;
+    padding: 2vw 3.3vw;
+    width: 100%;
+    height: 60%;
+}
+#footer{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#footer4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15vw;
 }

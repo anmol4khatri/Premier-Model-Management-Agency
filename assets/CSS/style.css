@@ -18,6 +18,7 @@ html, body{
     height: 100%;
     padding-top: 0.1px;
     position: relative;
+    overflow-x: hidden;
 }
 #nav{
     width: 100%;
@@ -50,6 +51,9 @@ html, body{
 }
 #nav h2:nth-last-child(1){
     width: 10%;
+}
+#nav #menu{
+    display: none;
 }
 #center{
     width: 100%;
@@ -208,6 +212,9 @@ html, body{
 }
 #p1_right_text_right{
     width: 50%;
+}
+#p1_right img{
+    object-position: top;
 }
 #page2{
     width: 100%;
@@ -430,10 +437,10 @@ html, body{
 }
 #page8 #marque{
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 #page8 #marque h1{
     display: inline-block;
@@ -556,4 +563,161 @@ html, body{
 }
 #footer4 i{
     font-size: 2vw;
+}
+@media (max-width:600px) {
+    #nav{
+        border: 0px;
+        padding: 4vw 3.7vw;
+    }
+    #nav h2{
+        display: none;
+    }
+    #nav h1{
+        border: 0px;
+        font-size: 5.5vw;
+        padding-left: 10.5vw;
+    }
+    #nav #menu{
+        display:inline;
+        font-size: 5.5vw;
+    }
+    #center{
+        height: 30%;
+        padding: 2vw 3.3vw;
+        padding-bottom: 4vw;
+    }
+    #center #content #overlay{
+        top: 65%;
+    }
+    #upper_overlay h4{
+        font-size: 5vw;
+    }
+    #potraits{
+        height: 20%;
+    }
+    .container{
+        width: 200%;
+    }
+    #potraits img {
+        width: 15.25%;
+    }
+    #sort_by_alphabet{
+        display: none;
+    }
+    #page1{
+        height: 40%;
+    }
+    #p1_right img{
+        object-position: bottom;
+    }
+    #p1_right_text{
+        bottom: 0%;
+        font-size: 1.5vw;
+    }
+    #p1_right_text_right h3{
+        font-size: 2.2vw;
+    }
+    #page2{
+        height: 40%;
+    }
+    #p2_left{
+        position: relative;
+    }
+    #p2_left img{
+        width: 65vw;
+        position: absolute;
+        top: 7%;
+        left: -45%;
+    }
+    #p2_left h2{
+        font-size: 2.8vw;
+        position: relative;
+        top: 72%;
+    }
+    #page3{
+        height: 40%;
+    }
+    #page4{
+        height: 40%;
+    }
+    #page4 .elem h3{
+        font-size: 3vw;
+    }
+    #page4 .elem h1{
+        font-size: 4.5vw;
+    }
+    #page4 .elem{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+    .inner_elem2{
+        width: 60%;
+    }
+    .elem img{
+        opacity: 1;
+        left: 30%;
+    }
+    #page5{
+        height: 40%;
+    }
+    #p5_right_text h2{
+        font-size: 3vw;
+    }
+    #p5_right_text h3{
+        font-size: 2vw;
+    }
+    #p5_right_image{
+        display: none;
+    }
+    #page6{
+        height:40%;
+    }
+    #page6 img{
+        object-position: center;
+    }
+    #page7{
+        height: 40%;
+    }
+    #p7_right_text{
+        font-size: 2vw;
+    }
+    #page8{
+        height: 40%;
+    }
+    #page8 #marque{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    #page8 #marque h1{
+        -webkit-text-stroke: 0.8px black;
+    }
+    #second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #third{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top_text{
+        font-size: 1.8vw;
+    }
+    .bottom_image{
+        height: 60%;
+    }
+    #page9{
+        height: 15%;
+    }
+    #footer{
+        height: 100%;
+    }
+    #footer h2{
+        font-size: 2.5vw;
+    }
+    #footer4_bottom #text h3{
+        font-size: 1.5vw;
+    }
 }
